@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+
 const Registration = () => {
+
+    const { createUser } = useContext(AuthContext);
 
     const handleRegistrationForm = e => {
         e.preventDefault();
@@ -7,7 +13,14 @@ const Registration = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        console.log(name, image, email, password);
+        
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
 
@@ -49,6 +62,7 @@ const Registration = () => {
                         <div className="form-control mt-6">
                             <button className="px-4 py-3 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">REGISTRATION</button>
                         </div>
+                        <p>Already have an account? Please <Link to={'/login'} className="text-blue-700 font-bold underline">Login</Link></p>
                     </form>
                 </div>
             </div>
