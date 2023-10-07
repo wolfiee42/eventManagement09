@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Tech and Gaming Expo",
         "image": "https://i.ibb.co/qxM6J3d/techand-Gaming-Expo.jpg",
-        "price": "$499",
+        "price": "$399",
         "short_description": "The ultimate tech and gaming experience",
         "long_description": "Join us for the Tech and Gaming Expo, where you can explore the latest in technology and gaming. Discover cutting-edge gadgets, participate in eSports tournaments, attend developer panels, and immerse yourself in the world of virtual reality. It's a must-attend event for tech and gaming enthusiasts."
     },
@@ -12,7 +12,7 @@
         "name": "Game Developers Conference",
         "image": "https://i.ibb.co/KFwwdNf/gaem-Developer-Conference.jpg",
         "price": "$499",
-        "short_description": "Connect with game developers and industry experts",
+        "short_description": "Connect with game developers and experts",
         "long_description": "The Game Developers Conference is the premier event for game creators, programmers, and artists. Learn from industry experts, attend workshops, and network with fellow game developers. Whether you're a seasoned pro or just starting, GDC has something for everyone."
     },
     {
