@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Registration = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateuser } = useContext(AuthContext);
 
     const handleRegistrationForm = e => {
         e.preventDefault();
@@ -13,10 +14,25 @@ const Registration = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        
+        if (password.length < 6) {
+            return toast.error("Password should be at least 6 characters")
+        }
+
+        if (/[A-Z]/.test(password)) {
+            return toast.error("Password should not have a capital letter")
+        }
+        if (/[!@#$%^&*()_+{}\[\]:;<>,.?~\\\-/]/.test(password)) {
+            return toast.error("Password should not have a special character")
+        }
         createUser(email, password)
-            .then(result => {
-                console.log(result.user);
+            .then(res => {
+                updateuser(name, image)
+                    .then(() => {
+                        console.log('user created successfully');
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    })
             })
             .catch(error => {
                 console.log(error);
@@ -54,7 +70,7 @@ const Registration = () => {
                             <label className="label">
                                 <span className="text-xl font-semibold">Password</span>
                             </label>
-                            <input name="password" type="password" placeholder="Password" className="input input-bordered" required />
+                            <input name="password" type="text" placeholder="Password" className="input input-bordered" required />
                             <label className="label">
                                 <a href="#" className="font-medium link link-hover">Forgot password?</a>
                             </label>

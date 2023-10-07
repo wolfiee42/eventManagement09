@@ -12,6 +12,6 @@ const Products = ({ services }) => {
     );
 };
 Products.propTypes = {
-    services: PropTypes.object
+    services: PropTypes.array
 }
 export default Products;
