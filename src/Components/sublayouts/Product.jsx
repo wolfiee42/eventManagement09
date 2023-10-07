@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-    console.log(product);
     const { id, image, name, short_description, price } = product
     return (
         <div>

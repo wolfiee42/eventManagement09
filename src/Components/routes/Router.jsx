@@ -7,6 +7,7 @@ import Blog from "../Pages/layouts/Blog";
 import Login from "../Pages/layouts/Login";
 import Registration from "../Pages/layouts/Registration";
 import ContactUs from "../Pages/layouts/ContactUs";
+import ServiceDetails from "../Pages/layouts/ServiceDetails";
 
 
 const Router = createBrowserRouter([
@@ -34,6 +35,10 @@ const Router = createBrowserRouter([
             {
                 path: "/contactUs",
                 element: <ContactUs></ContactUs>
+            },
+            {
+                path: "//service/:id",
+                element: <ServiceDetails></ServiceDetails>
             },
         ]
     },
