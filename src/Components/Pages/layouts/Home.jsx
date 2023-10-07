@@ -1,7 +1,11 @@
+import Aboutus from "../../sublayouts/Aboutus";
+import Banner from "../../sublayouts/Banner";
+
 const Home = () => {
     return (
-        <div className="max-w-7xl mx-auto">
-            <h2>from home</h2>
+        <div>
+            <Banner></Banner>
+            <Aboutus></Aboutus>
         </div>
     );
 };
