@@ -2,10 +2,12 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
+import { FcGoogle } from "react-icons/fc";
 
 const Registration = () => {
 
-    const { createUser, updateuser } = useContext(AuthContext);
+    const { createUser, updateuser, signinwithGoogle } = useContext(AuthContext);
+
 
     const handleRegistrationForm = e => {
         e.preventDefault();
@@ -21,11 +23,12 @@ const Registration = () => {
         if (/[A-Z]/.test(password)) {
             return toast.error("Password should not have a capital letter")
         }
-        if (/[!@#$%^&*()_+{}\[\]:;<>,.?~\\\-/]/.test(password)) {
+        if (/[!@#$%^&*()_+{}=`'"|`[\]:;<>,.?~\\\-/]/.test(password)) {
             return toast.error("Password should not have a special character")
         }
         createUser(email, password)
-            .then(res => {
+            .then((result) => {
+                console.log(result);
                 updateuser(name, image)
                     .then(() => {
                         console.log('user created successfully');
@@ -37,6 +40,10 @@ const Registration = () => {
             .catch(error => {
                 console.log(error);
             })
+    }
+
+    const hangleGoogle = () => {
+        signinwithGoogle()
     }
 
 
@@ -80,6 +87,10 @@ const Registration = () => {
                         </div>
                         <p>Already have an account? Please <Link to={'/login'} className="text-blue-700 font-bold underline">Login</Link></p>
                     </form>
+                    <div className="divider px-10">OR</div>
+                    <div className=" mb-5 mt-10 flex justify-center items-center">
+                        <button onClick={hangleGoogle} className="btn min-w-[445px] px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer"><FcGoogle className="text-xl"></FcGoogle>Google</button>
+                    </div>
                 </div>
             </div>
         </div>

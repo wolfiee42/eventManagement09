@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
-    const { loginUser } = useContext(AuthContext);
+    const { loginUser, signinwithGoogle } = useContext(AuthContext);
 
     const handleLoginForm = e => {
         e.preventDefault();
@@ -18,6 +19,9 @@ const Login = () => {
             .catch(error => {
                 console.log(error);
             })
+    }
+    const hangleGoogle = () => {
+        signinwithGoogle()
     }
 
 
@@ -49,6 +53,10 @@ const Login = () => {
                         </div>
                         <p>Do not have an account? Please <Link to={'/registration'} className="text-blue-700 font-bold underline">Register</Link></p>
                     </form>
+                    <div className="divider px-10">OR</div>
+                    <div className=" mb-5 mt-10 flex justify-center items-center">
+                        <button onClick={hangleGoogle} className="btn min-w-[445px] px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer"><FcGoogle className="text-xl"></FcGoogle>Google</button>
+                    </div>
                 </div>
             </div>
         </div>
