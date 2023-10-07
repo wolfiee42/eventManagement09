@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Tech and Gaming Expo",
+        "image": "https://i.ibb.co/qxM6J3d/techand-Gaming-Expo.jpg",
+        "price": "$499",
+        "short_description": "The ultimate tech and gaming experience",
+        "long_description": "Join us for the Tech and Gaming Expo, where you can explore the latest in technology and gaming. Discover cutting-edge gadgets, participate in eSports tournaments, attend developer panels, and immerse yourself in the world of virtual reality. It's a must-attend event for tech and gaming enthusiasts."
+    },
+    {
+        "name": "Game Developers Conference",
+        "image": "https://i.ibb.co/KFwwdNf/gaem-Developer-Conference.jpg",
+        "price": "$499",
+        "short_description": "Connect with game developers and industry experts",
+        "long_description": "The Game Developers Conference is the premier event for game creators, programmers, and artists. Learn from industry experts, attend workshops, and network with fellow game developers. Whether you're a seasoned pro or just starting, GDC has something for everyone."
+    },
+    {
+        "name": "Esports Championship",
+        "image": "https://i.ibb.co/wdP0WLx/esports.jpg",
+        "price": "$999",
+        "short_description": "Compete in high-stakes eSports tournaments",
+        "long_description": "Compete against the best in the world at the Esports Championship. Choose your game, form a team, and battle it out for glory and cash prizes. Whether you're into MOBAs, FPS, or strategy games, this championship is your chance to prove your skills."
+    },
+    {
+        "name": "Tech Innovation Summit",
+        "image": "https://i.ibb.co/h9gbpr3/tech-Innovation.jpg",
+        "price": "$699",
+        "short_description": "Explore the future of technology",
+        "long_description": "The Tech Innovation Summit brings together visionaries, inventors, and tech enthusiasts. Discover the latest innovations in AI, blockchain, and emerging technologies. Attend thought-provoking talks and get a glimpse into the future of the tech world."
+    },
+    {
+        "name": "Gaming Night Out",
+        "image": "https://i.ibb.co/sjJM2MN/gaming-Night-Out.jpg",
+        "price": "$199",
+        "short_description": "A night of gaming, food, and fun",
+        "long_description": "Join us for Gaming Night Out, an evening of non-stop gaming action, delicious food, and camaraderie. Play your favorite games, from board games to video games, and make new friends in the gaming community. It's the perfect way to unwind and have a blast."
+    },
+    {
+        "name": "VR Gaming Showcase",
+        "image": "https://i.ibb.co/MVYHmDt/vr.jpg",
+        "price": "$299",
+        "short_description": "Step into the world of virtual reality",
+        "long_description": "Experience the future of gaming at the VR Gaming Showcase. Try out the latest VR headsets, games, and experiences. Whether you're a VR enthusiast or a newbie, you'll be amazed by the immersive worlds waiting for you."
+    }
+]
