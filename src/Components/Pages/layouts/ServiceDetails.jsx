@@ -20,8 +20,6 @@ const ServiceDetails = () => {
 
 
     const service = user.find(item => item.id === idInt);
-
-    console.log(service);
     const { image, name, short_description, long_description, price } = service || {}
     const handleBookBtn = () => {
         Swal.fire({
@@ -45,7 +43,7 @@ const ServiceDetails = () => {
 
 
     return (
-        <div className="bg-gradient-to-r from-gray-200 to-gray-700 min-h-[800px]">
+        <div className="bg-gradient-to-r from-gray-200 to-gray-700 min-h-[680px]">
             <div className="max-w-7xl mx-auto flex items-center p-5 ">
                 <div className="flex-1 p-20">
                     <img className="rounded-lg" src={image} alt="" />

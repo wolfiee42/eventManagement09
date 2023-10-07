@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 
 const Product = ({ product }) => {
     const { id, image, name, short_description, price } = product
@@ -20,5 +22,7 @@ const Product = ({ product }) => {
         </div>
     );
 };
-
+Product.propTypes = {
+    product: PropTypes.object
+}
 export default Product;

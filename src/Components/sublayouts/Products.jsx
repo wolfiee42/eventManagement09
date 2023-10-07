@@ -1,4 +1,6 @@
 import Product from "./Product";
+import PropTypes from 'prop-types';
+
 
 const Products = ({ services }) => {
     return (
@@ -9,5 +11,7 @@ const Products = ({ services }) => {
         </div>
     );
 };
-
+Products.propTypes = {
+    services: PropTypes.object
+}
 export default Products;

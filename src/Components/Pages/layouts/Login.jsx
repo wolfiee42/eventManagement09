@@ -47,7 +47,7 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button className="px-4 py-3 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">LOGIN</button>
                         </div>
-                        <p>Don't have an account? Please <Link to={'/registration'} className="text-blue-700 font-bold underline">Register</Link></p>
+                        <p>Do not have an account? Please <Link to={'/registration'} className="text-blue-700 font-bold underline">Register</Link></p>
                     </form>
                 </div>
             </div>
