@@ -6,10 +6,10 @@ import Home from "../Pages/layouts/Home";
 import Blog from "../Pages/layouts/Blog";
 import Login from "../Pages/layouts/Login";
 import Registration from "../Pages/layouts/Registration";
-import ContactUs from "../Pages/layouts/ContactUs";
 import ServiceDetails from "../Pages/layouts/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
 import PurchasedService from "../Pages/layouts/PurchasedService";
+import Profile from "../Pages/layouts/Profile";
 
 
 const Router = createBrowserRouter([
@@ -35,10 +35,6 @@ const Router = createBrowserRouter([
                 element: <Registration></Registration>
             },
             {
-                path: "/contactUs",
-                element: <ContactUs></ContactUs>
-            },
-            {
                 path: "/service/:id",
                 element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
             },
@@ -47,6 +43,10 @@ const Router = createBrowserRouter([
                 element: <PrivateRoute><PurchasedService></PurchasedService></PrivateRoute>,
                 loader: () => fetch('/service.json')
             },
+            {
+                path: "/profile",
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>
+            }
         ]
     },
 ]);

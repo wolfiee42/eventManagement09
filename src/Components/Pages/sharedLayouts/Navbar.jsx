@@ -10,18 +10,21 @@ const Navbar = () => {
         logOut()
         toast.success('Logged out successfully.', {
             position: "bottom-center"
-          })
+        })
     }
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'contactUs'}>Contact us</NavLink></li>
-        <li><NavLink to={'/login'}>Login</NavLink></li>
-        <li><NavLink to={'/registration'}>Registration</NavLink></li>
+        <li><NavLink to={'/blog'}>Blog</NavLink></li>
         {
-            user && <li><NavLink to={'/blog'}>Blog</NavLink></li>
+            user ? '' : <> <li><NavLink to={'/login'}>Login</NavLink></li>
+                <li><NavLink to={'/registration'}>Registration</NavLink></li></>
         }
+
         {
             user && <li><NavLink to={'/purchased'}>Purchased Services</NavLink></li>
+        }
+        {
+            user && <li><NavLink to={'/profile'}>Profile</NavLink></li>
         }
 
 
@@ -47,8 +50,8 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
-                    <p className="font-semibold">{user.displayName}</p>
-                    <img className="w-12 h-12 mx-3 rounded-[50px]" src={user.photoURL} alt="" />
+                        <p className="font-semibold">{user.displayName}</p>
+                        <img className="w-12 h-12 mx-3 rounded-[50px]" src={user.photoURL} alt="" />
                         <Link onClick={handleSignOut} className="px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">Sign Out</Link>
                     </> : <Link to={'/login'} className="px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">Login</Link>
                 }

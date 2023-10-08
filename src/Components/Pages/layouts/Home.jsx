@@ -4,6 +4,7 @@ import Banner from "../../sublayouts/Banner";
 import Faq from "../../sublayouts/FAQ";
 import Footer from "../../sublayouts/Footer";
 import Products from "../../sublayouts/Products";
+import Surved from "../../sublayouts/surved";
 
 const Home = () => {
     const services = useLoaderData();
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Products services={services}></Products>
             <Aboutus></Aboutus>
+            <Surved></Surved>
             <Faq></Faq>
             <Footer></Footer>
         </div>
