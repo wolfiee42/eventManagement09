@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const PrivateRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
     if (loading) {
-        return <span className="loading loading-spinner loading-lg"></span>
+        return <span className="min-w-[60px] min-h-[60px] mx-auto loading loading-spinner loading-lg flex items-center"></span>
     }
     if (user) {
         return children

@@ -29,6 +29,7 @@ const Registration = () => {
         createUser(email, password)
             .then((result) => {
                 console.log(result);
+                toast.success('Registration Successful!')
                 updateuser(name, image)
                     .then(() => {
                         console.log('user created successfully');
@@ -44,6 +45,12 @@ const Registration = () => {
 
     const hangleGoogle = () => {
         signinwithGoogle()
+            .then(() => {
+                toast.success('Registration Successful!')
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
 

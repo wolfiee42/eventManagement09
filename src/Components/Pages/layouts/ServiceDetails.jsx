@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from 'sweetalert2'
+import { saveItems } from "../../uilities/utilities";
 
 const ServiceDetails = () => {
     const { id } = useParams();
@@ -22,6 +23,8 @@ const ServiceDetails = () => {
     const service = user.find(item => item.id === idInt);
     const { image, name, short_description, long_description, price } = service || {}
     const handleBookBtn = () => {
+        saveItems(idInt)
+
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -30,15 +33,15 @@ const ServiceDetails = () => {
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, book event!'
-          }).then((result) => {
+        }).then((result) => {
             if (result.isConfirmed) {
-              Swal.fire(
-                'Booked!',
-                'An event has been booked.',
-                'success'
-              )
+                Swal.fire(
+                    'Booked!',
+                    'An event has been booked.',
+                    'success'
+                )
             }
-          })
+        })
     }
 
 
