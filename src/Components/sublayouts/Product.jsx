@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Product = ({ product }) => {
     const { id, image, name, short_description, price } = product
     return (
-        <div>
+        <div data-aos="fade-down">
             <div className="card w-96 mx-auto bg-gradient-to-r from-gray-200 to-gray-500 shadow-xl">
                 <figure><img className="w-[400px] h-[250px]" src={image} alt="Shoes" /></figure>
                 <div className="card-body">

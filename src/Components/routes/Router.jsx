@@ -10,12 +10,14 @@ import ServiceDetails from "../Pages/layouts/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
 import PurchasedService from "../Pages/layouts/PurchasedService";
 import Profile from "../Pages/layouts/Profile";
+import Errorlayout from "../Pages/layouts/Errorlayout";
 
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <Roots />,
+        errorElement: <Errorlayout />,
         children: [
             {
                 path: "/",
