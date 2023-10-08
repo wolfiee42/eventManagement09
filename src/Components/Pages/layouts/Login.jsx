@@ -16,7 +16,9 @@ const Login = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user);
-                toast.success('Login Successful!')
+                toast.success('Login Successful!', {
+                    position: "bottom-center"
+                  })
             })
             .catch(error => {
                 console.log(error);

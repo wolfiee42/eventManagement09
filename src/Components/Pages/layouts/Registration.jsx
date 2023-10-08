@@ -17,14 +17,20 @@ const Registration = () => {
         const password = e.target.password.value;
 
         if (password.length < 6) {
-            return toast.error("Password should be at least 6 characters")
+            return toast.error('Password should be at least 6 characters.', {
+                position: "bottom-center"
+              })
         }
 
         if (/[A-Z]/.test(password)) {
-            return toast.error("Password should not have a capital letter")
+            return toast.error('Password should not have a capital letter.', {
+                position: "bottom-center"
+              })
         }
         if (/[!@#$%^&*()_+{}=`'"|`[\]:;<>,.?~\\\-/]/.test(password)) {
-            return toast.error("Password should not have a special character")
+            return toast.error('Password should not have a special character', {
+                position: "bottom-center"
+              })
         }
         createUser(email, password)
             .then((result) => {
