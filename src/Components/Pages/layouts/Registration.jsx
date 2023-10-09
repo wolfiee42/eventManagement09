@@ -92,7 +92,7 @@ const Registration = () => {
                             <label className="label">
                                 <span className="lg:text-xl font-semibold">Password</span>
                             </label>
-                            <input name="password" type="text" placeholder="Password" className="input input-bordered" required />
+                            <input name="password" type="password" placeholder="Password" className="input input-bordered" required />
                         </div>
                         <div className="form-control mt-6">
                             <button className="px-4 py-3 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">REGISTRATION</button>
