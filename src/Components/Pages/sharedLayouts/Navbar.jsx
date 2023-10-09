@@ -40,7 +40,9 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to={'/'}><img className="w-[140px] h-[80px]" src="https://i.ibb.co/L0GXprK/Screenshot-239-removebg-preview.png" alt="" /></Link>
+                <Link to={'/'}><img data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000" className="w-[140px] h-[80px]" src="https://i.ibb.co/L0GXprK/Screenshot-239-removebg-preview.png" alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
