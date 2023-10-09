@@ -19,18 +19,18 @@ const Registration = () => {
         if (password.length < 6) {
             return toast.error('Password should be at least 6 characters.', {
                 position: "bottom-center"
-              })
+            })
         }
 
         if (/[A-Z]/.test(password)) {
             return toast.error('Password should not have a capital letter.', {
                 position: "bottom-center"
-              })
+            })
         }
         if (/[!@#$%^&*()_+{}=`'"|`[\]:;<>,.?~\\\-/]/.test(password)) {
             return toast.error('Password should not have a special character', {
                 position: "bottom-center"
-              })
+            })
         }
         createUser(email, password)
             .then((result) => {
@@ -62,7 +62,9 @@ const Registration = () => {
 
     return (
         <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content flex-col">
+            <div data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" className="hero-content flex-col">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Registration now!</h1>
                 </div>

@@ -18,7 +18,7 @@ const Login = () => {
                 console.log(result.user);
                 toast.success('Login Successful!', {
                     position: "bottom-center"
-                  })
+                })
             })
             .catch(error => {
                 console.log(error);
@@ -37,7 +37,9 @@ const Login = () => {
 
     return (
         <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content flex-col">
+            <div data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" className="hero-content flex-col">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
                 </div>
