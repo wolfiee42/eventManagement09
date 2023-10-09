@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>by 'let greeting' im declaring a variable with no value. In the secend im declaring that same variable with an empty array. so, when im logging in console greetign the outcome will be '{}'</i>
 
 </p>
 </details>
