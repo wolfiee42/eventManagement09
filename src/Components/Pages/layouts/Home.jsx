@@ -9,7 +9,7 @@ import Surved from "../../sublayouts/surved";
 const Home = () => {
     const services = useLoaderData();
     return (
-        <div>
+        <div className="overflow-hidden">
             <Banner></Banner>
             <Products services={services}></Products>
             <Aboutus></Aboutus>

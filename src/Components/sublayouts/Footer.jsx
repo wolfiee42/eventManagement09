@@ -2,7 +2,7 @@ import { AiFillFacebook,AiFillTwitterSquare, AiFillYoutube } from "react-icons/a
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-gray-200 to-gray-700 footer footer-center p-5  text-primary-content">
+        <footer className="bg-gradient-to-r from-gray-200 to-gray-700 footer footer-center p-5 text-primary-content">
             <aside>
                 <img className="w-[200px] h-[100px]" src="https://i.ibb.co/L0GXprK/Screenshot-239-removebg-preview.png" alt="" />
                 <p className="font-semibold text-black">

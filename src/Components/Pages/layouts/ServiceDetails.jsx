@@ -46,18 +46,18 @@ const ServiceDetails = () => {
 
 
     return (
-        <div className="bg-gradient-to-r from-gray-200 to-gray-700 min-h-[680px]">
-            <div className="max-w-7xl mx-auto flex items-center p-5 ">
-                <div className="flex-1 p-20">
+        <div className="bg-gradient-to-r from-gray-200 to-gray-700 lg:min-h-[680px]">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center p-5 ">
+                <div className="flex-1 lg:p-20">
                     <img className="rounded-lg" src={image} alt="" />
                 </div>
-                <div className="flex-1 p-20">
-                    <h2 className="text-2xl font-bold">{name}</h2>
-                    <p className="font-semibold my-3">{short_description}</p>
-                    <p className="mb-3">{long_description}</p>
+                <div className="flex-1 my-5 lg:my-0 lg:p-20">
+                    <h2 className="lg:text-2xl font-bold">{name}</h2>
+                    <p className="text-sm lg:text-base font-semibold my-3">{short_description}</p>
+                    <p className="mb-3 text-sm lg:text-base">{long_description}</p>
                     <div>
-                        <span className="font-bold text-xl mr-3">Price:</span>
-                        <button onClick={handleBookBtn} className="px-4 py-3 w-40 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">{price}</button>
+                        <span className="font-bold lg:text-xl mr-3">Price:</span>
+                        <button onClick={handleBookBtn} className="py-2 lg:px-4 lg:py-3 w-28 lg:w-40 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">{price}</button>
                     </div>
                 </div>
             </div>

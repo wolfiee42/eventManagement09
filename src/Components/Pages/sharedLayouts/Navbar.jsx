@@ -30,7 +30,7 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar bg-gray-200">
+        <div className="navbar p-0 lg:navbar bg-gray-200">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -47,12 +47,12 @@ const Navbar = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end pr-5">
                 {
                     user ? <>
-                        <p className="font-semibold">{user.displayName}</p>
-                        <img className="w-12 h-12 mx-3 rounded-[50px]" src={user.photoURL} alt="" />
-                        <Link onClick={handleSignOut} className="px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">Sign Out</Link>
+                        <p className="text-xs font-semibold">{user.displayName}</p>
+                        <img className="w-8 h-8 lg:w-12 lg:h-12 mx-3 rounded-[50px]" src={user.photoURL} alt="" />
+                        <Link onClick={handleSignOut} className="px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer text-xs">Sign Out</Link>
                     </> : <Link to={'/login'} className="px-4 py-2 rounded-lg bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black hover:cursor-pointer">Login</Link>
                 }
 
