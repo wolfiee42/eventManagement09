@@ -5,7 +5,7 @@ import { BiSolidNetworkChart, BiTask, BiSolidPaperPlane } from "react-icons/bi";
 
 const Faq = () => {
     return (
-        <div className="max-w-7xl mx-auto my-10">
+        <div data-aos="flip-left" className="max-w-7xl mx-auto my-10">
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-gray-700 to-gray-300 text-black mb-3 rounded-md">
                 <div className="collapse-title flex items-center gap-3 text-xl font-medium">
                     <FaHandshake className="text-black"></FaHandshake>
