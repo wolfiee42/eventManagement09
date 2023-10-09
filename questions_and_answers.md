@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: A
 
-<i>by 'let greeting' im declaring a variable with no value. In the secend im declaring that same variable with an empty array. so, when im logging in console greetign the outcome will be '{}'</i>
+<i>By 'let greeting' im declaring a variable with no value. In the secend im declaring that same variable with an empty array. So, when im logging in console greetign the outcome will be '{}'</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Sum, a function which takes two variables and add both of it. When im caling sum with one number and one string, it will simply add both parameters side by side rather than additioning them, cause a number and a string is unadditionable.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>The reason behind ans A, is because if one wants to add something in an array it is by .push or by .shift but in the question,  there is noting like that.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>The reason behind correct answer is b is because you call by ${} this structure in condition not in returing a function.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>The answer is 3 because the code iterates over an array called `nums`, which contains the numbers 0, 1, 2, and 3. It uses a `forEach` loop to count the elements in the array that are truthy (i.e., not equal to 0) and increments a `count` variable by 1 for each such element. Since three elements (1, 2, and 3) are truthy, `count` is incremented three times, resulting in a final value of 3 when it is logged to the console.</i>
 
 </p>
 </details>
